@@ -1,5 +1,7 @@
 # gbatools
 
+[![build](https://github.com/dnasdw/gbatools/actions/workflows/build.yml/badge.svg)](https://github.com/dnasdw/gbatools/actions/workflows/build.yml)
+
 aif2gba is a tool for converting between AIF, S, and BIN formats, including all the features of aif2agb (version 1.05 and 1.06a) and pok_aif (version 1.06a.006).
 
 ## Platforms
