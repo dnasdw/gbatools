@@ -52,8 +52,8 @@ jobs:
         shell: cmd
       - name: Compress windows_xp-x86
         run: |
-          7z a ../gbatools_windows_xp-x86.zip aif2gba.exe
-          DEL aif2gba.exe
+          7z a ../gbatools_windows_xp-x86.zip aif2gba.exe findwavedata.exe
+          DEL aif2gba.exe findwavedata.exe
         shell: cmd
         working-directory: ./bin
 
@@ -84,8 +84,8 @@ jobs:
         shell: cmd
       - name: Compress windows-x86
         run: |
-          7z a ../gbatools_windows-x86.zip aif2gba.exe
-          DEL aif2gba.exe
+          7z a ../gbatools_windows-x86.zip aif2gba.exe findwavedata.exe
+          DEL aif2gba.exe findwavedata.exe
         shell: cmd
         working-directory: ./bin
       - name: Build windows-x64
@@ -100,8 +100,8 @@ jobs:
         shell: cmd
       - name: Compress windows-x64
         run: |
-          7z a ../gbatools_windows-x64.zip aif2gba.exe
-          DEL aif2gba.exe
+          7z a ../gbatools_windows-x64.zip aif2gba.exe findwavedata.exe
+          DEL aif2gba.exe findwavedata.exe
         shell: cmd
         working-directory: ./bin
       - name: Build windows-arm64
@@ -116,8 +116,8 @@ jobs:
         shell: cmd
       - name: Compress windows-arm64
         run: |
-          7z a ../gbatools_windows-arm64.zip aif2gba.exe
-          DEL aif2gba.exe
+          7z a ../gbatools_windows-arm64.zip aif2gba.exe findwavedata.exe
+          DEL aif2gba.exe findwavedata.exe
         shell: cmd
         working-directory: ./bin
 
@@ -159,8 +159,8 @@ jobs:
         shell: bash
       - name: Compress linux-x64
         run: |
-          tar -cvzf ../gbatools_linux-x64.tar.gz aif2gba
-          rm aif2gba
+          tar -cvzf ../gbatools_linux-x64.tar.gz aif2gba findwavedata
+          rm aif2gba findwavedata
         working-directory: ./bin
       - name: Build linux-arm64
         run: |
@@ -174,8 +174,8 @@ jobs:
         shell: bash
       - name: Compress linux-arm64
         run: |
-          tar -cvzf ../gbatools_linux-arm64.tar.gz aif2gba
-          rm aif2gba
+          tar -cvzf ../gbatools_linux-arm64.tar.gz aif2gba findwavedata
+          rm aif2gba findwavedata
         working-directory: ./bin
 
       - name: Upload linux-x64
@@ -210,8 +210,8 @@ jobs:
         shell: bash
       - name: Compress macos-x64
         run: |
-          tar -cvzf ../gbatools_macos-x64.tar.gz aif2gba
-          rm aif2gba
+          tar -cvzf ../gbatools_macos-x64.tar.gz aif2gba findwavedata
+          rm aif2gba findwavedata
         working-directory: ./bin
       - name: Build macos-arm64
         run: |
@@ -225,8 +225,8 @@ jobs:
         shell: bash
       - name: Compress macos-arm64
         run: |
-          tar -cvzf ../gbatools_macos-arm64.tar.gz aif2gba
-          rm aif2gba
+          tar -cvzf ../gbatools_macos-arm64.tar.gz aif2gba findwavedata
+          rm aif2gba findwavedata
         working-directory: ./bin
 
       - name: Upload macos-x64
