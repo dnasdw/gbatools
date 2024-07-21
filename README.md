@@ -4,6 +4,8 @@
 
 aif2gba is a tool for converting between AIF, S, and BIN formats, including all the features of aif2agb (version 1.05 and 1.06a) and pok_aif (version 1.06a.006).
 
+findwavedata is a tool for finding wave data in a ROM.
+
 ## Platforms
 
 - Windows (XP or later)
